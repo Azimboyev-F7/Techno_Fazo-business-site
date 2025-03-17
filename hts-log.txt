@@ -1,0 +1,23 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 17 Mar 2025 20:54:33 at https://preview.colorlib.com/theme/electro/
+(httrack https://preview.colorlib.com/theme/electro/ )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/fonts/glyphicons-halflings-regular.eot (from https://preview.colorlib.com/theme/electro/css/bootstrap.min.css)
+20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/fonts/glyphicons-halflings-regular.eot? (from https://preview.colorlib.com/theme/electro/css/bootstrap.min.css)
+20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/fonts/glyphicons-halflings-regular.woff2 (from https://preview.colorlib.com/theme/electro/css/bootstrap.min.css)
+20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/fonts/glyphicons-halflings-regular.woff (from https://preview.colorlib.com/theme/electro/css/bootstrap.min.css)
+20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/fonts/glyphicons-halflings-regular.ttf (from https://preview.colorlib.com/theme/electro/css/bootstrap.min.css)
+20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/fonts/glyphicons-halflings-regular.svg (from https://preview.colorlib.com/theme/electro/css/bootstrap.min.css)
+20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/css/ajax-loader.gif (from https://preview.colorlib.com/theme/electro/css/slick-theme.css)
+20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/css/fonts/slick.eot (from https://preview.colorlib.com/theme/electro/css/slick-theme.css)
+20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/css/fonts/slick.eot? (from https://preview.colorlib.com/theme/electro/css/slick-theme.css)
+20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/css/fonts/slick.woff (from https://preview.colorlib.com/theme/electro/css/slick-theme.css)
+20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/css/fonts/slick.ttf (from https://preview.colorlib.com/theme/electro/css/slick-theme.css)
+20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/css/fonts/slick.svg (from https://preview.colorlib.com/theme/electro/css/slick-theme.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 41 seconds : 46 links scanned, 33 files written (4219316 bytes overall) [3518871 bytes received at 85826 bytes/sec], 1255956 bytes transferred using HTTP compression in 29 files, ratio 41%, 11.5 requests per connection
+(12 errors, 0 warnings, 0 messages)
