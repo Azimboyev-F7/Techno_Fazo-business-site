@@ -1,23 +1,19 @@
-HTTrack3.49-2+htsswf+htsjava launched on Mon, 17 Mar 2025 20:54:33 at https://preview.colorlib.com/theme/electro/
-(httrack https://preview.colorlib.com/theme/electro/ )
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 18 Mar 2025 17:50:10 at https://preview.colorlib.com/theme/timezone/
+(httrack https://preview.colorlib.com/theme/timezone/ )
 
 Information, Warnings and Errors reported for this mirror:
 note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
 	such as username/password authentication for websites mirrored in this project
 	do not share these files/folders if you want these information to remain private
 
-20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/fonts/glyphicons-halflings-regular.eot (from https://preview.colorlib.com/theme/electro/css/bootstrap.min.css)
-20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/fonts/glyphicons-halflings-regular.eot? (from https://preview.colorlib.com/theme/electro/css/bootstrap.min.css)
-20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/fonts/glyphicons-halflings-regular.woff2 (from https://preview.colorlib.com/theme/electro/css/bootstrap.min.css)
-20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/fonts/glyphicons-halflings-regular.woff (from https://preview.colorlib.com/theme/electro/css/bootstrap.min.css)
-20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/fonts/glyphicons-halflings-regular.ttf (from https://preview.colorlib.com/theme/electro/css/bootstrap.min.css)
-20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/fonts/glyphicons-halflings-regular.svg (from https://preview.colorlib.com/theme/electro/css/bootstrap.min.css)
-20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/css/ajax-loader.gif (from https://preview.colorlib.com/theme/electro/css/slick-theme.css)
-20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/css/fonts/slick.eot (from https://preview.colorlib.com/theme/electro/css/slick-theme.css)
-20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/css/fonts/slick.eot? (from https://preview.colorlib.com/theme/electro/css/slick-theme.css)
-20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/css/fonts/slick.woff (from https://preview.colorlib.com/theme/electro/css/slick-theme.css)
-20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/css/fonts/slick.ttf (from https://preview.colorlib.com/theme/electro/css/slick-theme.css)
-20:55:13	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/electro/css/fonts/slick.svg (from https://preview.colorlib.com/theme/electro/css/slick-theme.css)
+17:51:45	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/timezone/site.webmanifest (from https://preview.colorlib.com/theme/timezone/)
+17:53:10	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/timezone/industries.html (from https://preview.colorlib.com/theme/timezone/)
+17:53:10	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/timezone/catagori.html (from https://preview.colorlib.com/theme/timezone/)
+17:53:10	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/timezone/assets/css/owl.video.play.png (from https://preview.colorlib.com/theme/timezone/assets/css/owl.carousel.min.css)
+17:53:11	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/timezone/single-blog.html (from https://preview.colorlib.com/theme/timezone/blog.html)
+17:53:11	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/timezone/assets/js/gijgo.min.js (from https://preview.colorlib.com/theme/timezone/blog-details.html)
+17:53:11	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/timezone/img/product/single-product/card.jpg (from https://preview.colorlib.com/theme/timezone/checkout.html)
+17:53:11	Error: 	"Not Found" (404) at link https://preview.colorlib.com/theme/timezone/"https://maps.gstatic.com/mapfiles/openhand_8_8.cur" (from https://preview.colorlib.com/theme/timezone/contact.html)
 
-HTTrack Website Copier/3.49-2 mirror complete in 41 seconds : 46 links scanned, 33 files written (4219316 bytes overall) [3518871 bytes received at 85826 bytes/sec], 1255956 bytes transferred using HTTP compression in 29 files, ratio 41%, 11.5 requests per connection
-(12 errors, 0 warnings, 0 messages)
+HTTrack Website Copier/3.49-2 mirror complete in 3 minutes 1 seconds : 148 links scanned, 139 files written (13714817 bytes overall) [11676730 bytes received at 64512 bytes/sec], 3325620 bytes transferred using HTTP compression in 77 files, ratio 35%, 10.5 requests per connection
+(8 errors, 0 warnings, 0 messages)
