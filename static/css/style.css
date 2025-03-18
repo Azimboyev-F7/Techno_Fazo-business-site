@@ -229,7 +229,7 @@ textarea.input {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(0);
+  /*-webkit-transform: translate(-50%, -50%) scale(0);*/
   -ms-transform: translate(-50%, -50%) scale(0);
   transform: translate(-50%, -50%) scale(0);
   background-color: #FFF;
@@ -249,7 +249,7 @@ textarea.input {
   font-size: 10px;
   color: #FFF;
   opacity: 0;
-  -webkit-transform: scale(0);
+  /*-webkit-transform: scale(0);*/
   -ms-transform: scale(0);
   transform: scale(0);
   -webkit-transition: all 0.2s;
@@ -263,14 +263,14 @@ textarea.input {
 
 .input-radio input[type="radio"]:checked+label span:after {
   opacity: 1;
-  -webkit-transform: translate(-50%, -50%) scale(1);
+  /*-webkit-transform: translate(-50%, -50%) scale(1);*/
   -ms-transform: translate(-50%, -50%) scale(1);
   transform: translate(-50%, -50%) scale(1);
 }
 
 .input-checkbox input[type="checkbox"]:checked+label span:after {
   opacity: 1;
-  -webkit-transform: scale(1);
+  /*-webkit-transform: scale(1);*/
   -ms-transform: scale(1);
   transform: scale(1);
 }
@@ -675,7 +675,7 @@ textarea.input {
     overflow: hidden;
     z-index: 22;
     padding-top: 60px;
-    -webkit-transform: translateX(-100%);
+    /*-webkit-transform: translateX(-100%);*/
     -ms-transform: translateX(-100%);
     transform: translateX(-100%);
     -webkit-transition: 0.2s all;
@@ -723,7 +723,7 @@ textarea.input {
   width: 60%;
   background: #D10024;
   opacity: 0.9;
-  -webkit-transform: skewX(-45deg);
+  /*-webkit-transform: skewX(-45deg);*/
   -ms-transform: skewX(-45deg);
   transform: skewX(-45deg);
 }
@@ -737,7 +737,7 @@ textarea.input {
   width: 100%;
   background: #D10024;
   opacity: 0.9;
-  -webkit-transform: skewX(-45deg) translateX(-100%);
+  /*-webkit-transform: skewX(-45deg) translateX(-100%);*/
   -ms-transform: skewX(-45deg) translateX(-100%);
   transform: skewX(-45deg) translateX(-100%);
 }
@@ -755,7 +755,7 @@ textarea.input {
 }
 
 .shop:hover .shop-img>img {
-  -webkit-transform: scale(1.1);
+  /*-webkit-transform: scale(1.1);*/
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
