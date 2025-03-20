@@ -18,4 +18,6 @@
 - **Backend:** Django (Python)  
 - **Frontend:** HTML, CSS, JavaScript  
 - **Database:** SQLite / PostgreSQL  
-- **Deployment:** Gunicorn, Nginx  
+- **Deployment:** Gunicorn, Nginx
+
+-Created by Azimboyev Faxriyor
