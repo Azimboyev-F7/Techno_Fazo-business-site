@@ -122,7 +122,7 @@
                                 <!-- Hero-btn -->
                                 <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s"
                                      data-duration="2000ms">
-                                    <a href="{% url 'main:industry' %}" class="btn hero-btn">Shop Now</a>
+                                    <a href="{% url 'main:industry' %}" class="btn hero-btn">Harid qilish</a>
                                 </div>
                             </div>
                         </div>
@@ -233,13 +233,13 @@
                         <div class="col-xl-12 col-lg-12 col-md-6 col-sm-6">
                             <div class="single-gallery mb-30">
                                 <div class="gallery-img small-img"
-                                     style="background-image: url(../static/assets/img/gallery/gallery3.png);"></div>
+                                     style="background-image: url({% static 'assets/img/gallery/lighter.jpg' %});"></div>
                             </div>
                         </div>
                         <div class="col-xl-12 col-lg-12  col-md-6 col-sm-6">
                             <div class="single-gallery mb-30">
                                 <div class="gallery-img small-img"
-                                     style="background-image: url(../static/assets/img/gallery/gallery4.png);"></div>
+                                     style="background-image: url({% static 'assets/img/gallery/casio-watch.jpg' %});"></div>
                             </div>
                         </div>
                     </div>
@@ -283,7 +283,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="single-popular-items mb-50 text-center">
                         <div class="popular-img">
-                            <img src="../static/assets/img/gallery/popular2.png" alt="">
+                            <img src="{% static 'assets/img/gallery/smart-box.jpg' %}" style="height: 390px" alt="">
                             <div class="img-cap">
                                 <span>Add to cart</span>
                             </div>
@@ -300,7 +300,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="single-popular-items mb-50 text-center">
                         <div class="popular-img">
-                            <img src="../static/assets/img/gallery/popular3.png" alt="">
+                            <img src="{% static 'assets/img/gallery/km-166.jpg' %}" style="height: 390px" alt="">
                             <div class="img-cap">
                                 <span>Add to cart</span>
                             </div>
@@ -317,7 +317,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="single-popular-items mb-50 text-center">
                         <div class="popular-img">
-                            <img src="../static/assets/img/gallery/popular4.png" alt="">
+                            <img src="{% static 'assets/img/gallery/artel-remonte.jpg' %}" style="height: 390px" alt="">
                             <div class="img-cap">
                                 <span>Add to cart</span>
                             </div>
@@ -334,7 +334,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="single-popular-items mb-50 text-center">
                         <div class="popular-img">
-                            <img src="../static/assets/img/gallery/popular5.png" alt="">
+                            <img src="{% static 'assets/img/gallery/shark-flashlight.jpg' %}" style="height: 390px" alt="">
                             <div class="img-cap">
                                 <span>Add to cart</span>
                             </div>
@@ -343,7 +343,7 @@
                             </div>
                         </div>
                         <div class="popular-caption">
-                            <h3><a href="product_details.html">Thermo Ball Etip Gloves</a></h3>
+                            <h3><a href="product_details.html">Shark Flashlight</a></h3>
                             <span>$ 45,743</span>
                         </div>
                     </div>
@@ -351,7 +351,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="single-popular-items mb-50 text-center">
                         <div class="popular-img">
-                            <img src="../static/assets/img/gallery/popular6.png" alt="">
+                            <img src="{% static 'assets/img/gallery/wifi-tenda.jpg' %}" style="height: 390px" alt="">
                             <div class="img-cap">
                                 <span>Add to cart</span>
                             </div>
@@ -376,26 +376,7 @@
     </div>
     <!-- Popular Items End -->
     <!--? Video Area Start -->
-    <div class="video-area">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <div class="video-wrap">
-                        <div class="play-btn "><a class="popup-video"
-                                                  href="https://www.youtube.com/watch?v=KMc6DyEJp04"><i
-                                class="fas fa-play"></i></a></div>
-                    </div>
-                </div>
-            </div>
-            <!-- Arrow -->
-            <div class="thumb-content-box">
-                <div class="thumb-content">
-                    <h3>Next Video</h3>
-                    <a href="#"> <i class="flaticon-arrow"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--    -->
     <!-- Video Area End -->
     <!--? Watch Choice  Start-->
     <div class="watch-area section-padding30">
