@@ -44,18 +44,18 @@
                         <nav>
                             <ul id="navigation">
                                 <li><a href="/">Home</a></li>
-                                <li><a href="{% url 'main:shop' %}">mahsulotlar</a></li>
+                                <li><a href="{% url 'main:shop' %}">Mahsulotlar</a></li>
                                 <li><a href="{% url 'main:about' %}">Biz haqimizda</a></li>
-                                <li class="hot"><a href="#">Oxirigi</a>
+                                <li class="hot"><a href="#">Yangiliklar</a>
                                     <ul class="submenu">
-                                        <li><a href="{% url 'main:shop' %}"> Mahsulotlar Ro'yhati</a></li>
-                                        <li><a href="{% url 'main:product_list' %}"> Mahsulotlar Ro'yhati</a></li>
+                                        <li><a href="{% url 'main:shop' %}"> Mahsulotlar listi</a></li>
+                                        <li><a href="{% url 'main:product_list' %}"> Mahsulotlar</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="{% url 'main:blog' %}">Blog</a>
                                     <ul class="submenu">
                                         <li><a href="{% url 'main:blog' %}">Blog</a></li>
-                                        <li><a href="/">Blog Details</a></li>
+                                        <li><a href="blog-details.html">Blog Details</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">Pages</a>
@@ -67,22 +67,22 @@
                                         <li><a href="checkout.html">Product Checkout</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="{% url 'main:contact' %}">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
                     <!-- Header Right -->
-                    <!--                    <div class="header-right">-->
-                    <!--                        <ul>-->
-                    <!--                            <li>-->
-                    <!--                                <div class="nav-search search-switch">-->
-                    <!--                                    <span class="flaticon-search"></span>-->
-                    <!--                                </div>-->
-                    <!--                            </li>-->
-                    <!--                            <li><a href="login.html"><span class="flaticon-user"></span></a></li>-->
-                    <!--                            <li><a href="cart.html"><span class="flaticon-shopping-cart"></span></a></li>-->
-                    <!--                        </ul>-->
-                    <!--                    </div>-->
+                                       <div class="header-right">
+                                           <ul>
+                                               <li>
+                                                   <div class="nav-search search-switch">
+                                                       <span class="flaticon-search"></span>
+                                                   </div>
+                                               </li>
+                                               <li><a href="login.html"><span class="flaticon-user"></span></a></li>
+                                               <li><a href="cart.html"><span class="flaticon-shopping-cart"></span></a></li>
+                                           </ul>
+                                       </div>
                 </div>
                 <!-- Mobile Menu -->
                 <div class="col-12">

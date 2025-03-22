@@ -38,4 +38,9 @@ def blog(request):
     }
     return render(request, 'texno_fazo/blog.html', context)
 
+def contact(request):
+    context = {
+
+    }
+    return render(request, 'texno_fazo/contact.html', context)
 
