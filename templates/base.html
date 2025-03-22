@@ -44,18 +44,18 @@
                         <nav>
                             <ul id="navigation">
                                 <li><a href="/">Home</a></li>
-                                <li><a href="shop.html">shop</a></li>
-                                <li><a href="about.html">about</a></li>
-                                <li class="hot"><a href="#">Latest</a>
+                                <li><a href="{% url 'main:shop' %}">mahsulotlar</a></li>
+                                <li><a href="{% url 'main:about' %}">Biz haqimizda</a></li>
+                                <li class="hot"><a href="#">Oxirigi</a>
                                     <ul class="submenu">
-                                        <li><a href="{% url 'main:shop' %}"> Product list</a></li>
-                                        <li><a href="{% url 'main:product_list' %}"> Product Details</a></li>
+                                        <li><a href="{% url 'main:shop' %}"> Mahsulotlar Ro'yhati</a></li>
+                                        <li><a href="{% url 'main:product_list' %}"> Mahsulotlar Ro'yhati</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="blog.html">Blog</a>
+                                <li><a href="{% url 'main:blog' %}">Blog</a>
                                     <ul class="submenu">
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                        <li><a href="{% url 'main:blog' %}">Blog</a></li>
+                                        <li><a href="/">Blog Details</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">Pages</a>
@@ -97,7 +97,114 @@
 {% block content %}
 
 {% endblock %}
-
+<div class="shop-method-area">
+    <div class="container">
+        <div class="method-wrapper">
+            <div class="row d-flex justify-content-between">
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="single-method mb-40">
+                        <i class="ti-package"></i>
+                        <h6>🚚 Tez va ishonchli yetkazib berish</h6>
+                        <p>Butun O‘zbekiston bo‘ylab tezkor yetkazib berish xizmatidan foydalaning!</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="single-method mb-40">
+                        <i class="ti-unlock"></i>
+                        <h6>🔒 Xavfsiz to‘lov tizimi</h6>
+                        <p>Turli xil to‘lov usullari: Payme, Click, Visa va boshqalar.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="single-method mb-40">
+                        <i class="ti-reload"></i>
+                        <h6>🔹 Kafolatli va Ishonchli Mahsulotlar</h6>
+                        <p>Elektronika mahsulotlarimiz sifat va ishonchlilik kafolati bilan ta’minlangan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Shop Method End-->
+</main>
+<footer>
+<!-- Footer Start-->
+<div class="footer-area footer-padding">
+    <div class="container">
+        <div class="row d-flex justify-content-between">
+            <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
+                <div class="single-footer-caption mb-50">
+                    <div class="single-footer-caption mb-30">
+                        <!-- logo -->
+                        <div class="footer-logo">
+                            <a href="index-2.html"><img src="{% static 'assets/img/logo/logo_techno.png' %}"
+                                                        style="height: 100%; width: 200px" alt=""></a>
+                        </div>
+                        <div class="footer-tittle">
+                            <div class="footer-pera">
+                                <p>Texno Fazo - Fazogir Azimv tomonidan o'ylab topilgan bo'lib 10 yildan hizmat
+                                    ko'rsatmoqda</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5">
+                <div class="single-footer-caption mb-50">
+                    <div class="footer-tittle">
+                        <h4>Linklar</h4>
+                        <ul>
+                            <li><a href="#">Biz haqimizda</a></li>
+                            <li><a href="#"> Kafolat va qaytarish siyosati</a></li>
+                            <li><a href="#"> Eng yangi mahsulotlar</a></li>
+                            <li><a href="#"> Biz bilan bog‘lanish</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7">
+                <div class="single-footer-caption mb-50">
+                    <div class="footer-tittle">
+                        <h4>Top mahsulotlar</h4>
+                        <ul>
+                            <li><a href="#">Anntena</a></li>
+                            <li><a href="#">Fonar</a></li>
+                            <li><a href="#"> Wifi camera</a></li>
+                            <li><a href="#"> TV</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7">
+                <div class="single-footer-caption mb-50">
+                    <div class="footer-tittle">
+                        <h4>Biz bilan Bog'laning</h4>
+                        <ul>
+                            <li><i class="bi bi-telegram"></i> <a href="https://t.me/Texno_Fazo_7" target="_blank">Telegram</a>
+                            </li>
+                            <li><i class="bi bi-telephone"></i> <a href="tel:+998947652202">+998 94 765 22 02</a>
+                            </li>
+                            <li><i class="bi bi-geo-alt"></i><a href="">Samarqand, Urgut Yangi Bozor</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer bottom -->
+    </div>
+</div>
+<!-- Footer End-->
+</footer>
+<!--? Search model Begin -->
+<div class="search-model-box">
+<div class="h-100 d-flex align-items-center justify-content-center">
+    <div class="search-close-btn">+</div>
+    <form class="search-model-form">
+        <input type="text" id="search-input" placeholder="Searching key.....">
+    </form>
+</div>
+</div>
 
 <script src="../static/assets/js/vendor/modernizr-3.5.0.min.js"></script>
 <!-- Jquery, Popper, Bootstrap -->

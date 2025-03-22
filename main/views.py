@@ -26,3 +26,16 @@ def shop(request):
     }
     return render(request, 'texno_fazo/shop.html', context)
 
+def about(request):
+    context = {
+
+    }
+    return render(request, 'texno_fazo/about.html', context)
+
+def blog(request):
+    context = {
+
+    }
+    return render(request, 'texno_fazo/blog.html', context)
+
+
