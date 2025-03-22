@@ -1,98 +1,6 @@
-<!doctype html>
-<html lang="zxx">
-
-<!-- Mirrored from preview.colorlib.com/theme/timezone/product_details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 Mar 2025 12:52:21 GMT -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Watch shop | eCommers</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="site.html">
-    <link rel="shortcut icon" type="image/x-icon" href="../static/assets/img/favicon.ico">
-
-    <!-- CSS here -->
-        <link rel="stylesheet" href="../static/assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../static/assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="../static/assets/css/flaticon.css">
-        <link rel="stylesheet" href="../static/assets/css/slicknav.css">
-        <link rel="stylesheet" href="../static/assets/css/animate.min.css">
-        <link rel="stylesheet" href="../static/assets/css/magnific-popup.css">
-        <link rel="stylesheet" href="../static/assets/css/fontawesome-all.min.css">
-        <link rel="stylesheet" href="../static/assets/css/themify-icons.css">
-        <link rel="stylesheet" href="../static/assets/css/slick.css">
-        <link rel="stylesheet" href="../static/assets/css/nice-select.css">
-        <link rel="stylesheet" href="../static/assets/css/style.css">
-
-</head>
-    
-
-<body>
-    
-    <header>
-        <!-- Header Start -->
-        <div class="header-area">
-            <div class="main-header header-sticky">
-                <div class="container-fluid">
-                    <div class="menu-wrapper">
-                        <!-- Logo -->
-                        <div class="logo">
-                            <a href="index-2.html"><img src="../static/assets/img/logo/logotechno.png" alt=""></a>
-                        </div>
-                        <!-- Main-menu -->
-                        <div class="main-menu d-none d-lg-block">
-                            <nav>                                                
-                                <ul id="navigation">  
-                                    <li><a href="index-2.html">Home</a></li>
-                                    <li><a href="shop.html">shop</a></li>
-                                    <li><a href="about.html">about</a></li>
-                                    <li class="hot"><a href="#">Latest</a>
-                                        <ul class="submenu">
-                                            <li><a href="shop.html"> Product list</a></li>
-                                            <li><a href="product_details.html"> Product Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="blog.html">Blog</a>
-                                        <ul class="submenu">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="submenu">
-                                            <li><a href="login.html">Login</a></li>
-                                            <li><a href="cart.html">Cart</a></li>
-                                            <li><a href="elements.html">Element</a></li>
-                                            <li><a href="confirmation.html">Confirmation</a></li>
-                                            <li><a href="checkout.html">Product Checkout</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <!-- Header Right -->
-                        <div class="header-right">
-                            <ul>
-                                <li>
-                                    <div class="nav-search search-switch">
-                                        <span class="flaticon-search"></span>
-                                    </div>
-                                </li>
-                                <li> <a href="login.html"><span class="flaticon-user"></span></a></li>
-                                <li><a href="cart.html"><span class="flaticon-shopping-cart"></span></a> </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Mobile Menu -->
-                    <div class="col-12">
-                        <div class="mobile_menu d-block d-lg-none"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Header End -->
-    </header>
+{% extends 'base.html' %}    
+{% load static %}
+{% block content %}
     <main>
         <!-- Hero Area Start-->
         <div class="slider-area ">
@@ -101,7 +9,7 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap text-center">
-                                <h2>Watch Shop</h2>
+                                <h2>Elektronik mahsulotlar</h2>
                             </div>
                         </div>
                     </div>
@@ -116,7 +24,7 @@
                 <div class="col-lg-12">
                 <div class="product_img_slide owl-carousel">
                     <div class="single_product_img">
-                        <img src="../static/assets/img/gallery/gallery1.png" alt="#" class="img-fluid">
+                        <img src="{% static 'assets/img/gallery/t2_antena_q.png' %}" alt="#" style="height: 100%;" class="img-fluid">
                     </div>
                     <div class="single_product_img">
                         <img src="../static/assets/img/gallery/gallery01.png" alt="#" class="img-fluid">
@@ -257,6 +165,7 @@
         </div>
         <!-- Footer End-->
     </footer>
+{% endblock %}
     <!--? Search model Begin -->
     <div class="search-model-box">
         <div class="h-100 d-flex align-items-center justify-content-center">
@@ -321,7 +230,7 @@
 </script>
 
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9224db28fc8b3f7d","version":"2025.1.0","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"cd0b4b3a733644fc843ef0b185f98241","b":1}' crossorigin="anonymous"></script>
-</body>
+
 
 
 <!-- Mirrored from preview.colorlib.com/theme/timezone/product_details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 Mar 2025 12:52:28 GMT -->
