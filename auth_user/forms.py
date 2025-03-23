@@ -1,16 +1,21 @@
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth.models import User
 from django.forms import ModelForm
 from django import forms
 
-from auth_user.models import User
-
-class MyUserCreationForm(UserCreationForm):
-    class Meta(UserCreationForm.Meta):
-        model = User
-        fields = UserCreationForm.Meta.fields
-    
+class MyAuthenticationForm(AuthenticationForm):
     def __init__(self, *args, **kwargs):
-        super(MyUserCreationForm, self).__init__(*args, **kwargs)
-        self.fields['username'].widget.attrs['class'] = 'form-control'
-        self.fields['password'].widget.attrs['class'] = 'form-control'
+        super(MyAuthenticationForm, self).__init__(*args, **kwargs)
+        self.fields['username'].widget.attrs.update({
+            'class': 'form-control',
+            'name': 'username',
+            'placeholder': 'Enter your Username',
+            'id': 'exampleFormControlUsername',
+        })
+        self.fields['password'].widget.attrs.update({
+            'class': 'form-control',
+            'name': 'password',
+            'placeholder': 'Enter your Password',
+            'id': 'exampleFormControlPassword',
+        })
         

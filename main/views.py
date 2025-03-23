@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+
 # Create your views here.
 
 def index(request):
@@ -39,6 +40,7 @@ def blog(request):
     return render(request, 'texno_fazo/blog.html', context)
 
 def contact(request):
+
     context = {
 
     }
