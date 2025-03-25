@@ -2,20 +2,21 @@
 {% load static %}
 
 
-{% block content %}
+
 <!--? Preloader Start -->
-<div id="preloader-active">
-    <div class="preloader d-flex align-items-center justify-content-center">
-        <div class="preloader-inner position-relative">
-            <div class="preloader-circle"></div>
-            <div class="preloader-img pere-text">
-                <img src="{% static 'assets/img/logo/logo.png' %}" alt="">
+
+<!-- Preloader Start -->
+{% block content %}
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{% static 'assets/img/logo/logo.png' %}" alt="">
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Preloader Start -->
-<main>
     <!--? slider Area Start -->
     <div class="slider-area ">
         <div class="slider-active">
@@ -216,19 +217,25 @@
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="single-popular-items mb-50 text-center">
-                        <div class="popular-img">
-                            <img src="{% static 'assets/img/gallery/km-166.jpg' %}" style="height: 390px" alt="">
-                            <div class="img-cap">
-                                <span>Savatga qo'shish</span>
+                        {% for product in products %}
+                            <div class="popular-img">
+                                {% if product.image %}
+                                    <img src="{{ product.image.url }}" style="height: 390px" alt="">
+                                {% else %}
+                                    <h1>Image not found</h1>
+                                {% endif %}
+                                <div class="img-cap">
+                                    <span>Savatga qo'shish</span>
+                                </div>
+                                <div class="favorit-items">
+                                    <span class="flaticon-heart"></span>
+                                </div>
                             </div>
-                            <div class="favorit-items">
-                                <span class="flaticon-heart"></span>
+                            <div class="popular-caption">
+                                <h3><a href="product_details.html">{{ product.title }}</a></h3>
+                                <span>{{ product.price }}</span>
                             </div>
-                        </div>
-                        <div class="popular-caption">
-                            <h3><a href="product_details.html">Km-168 fonar</a></h3>
-                            <span>40.000 sum</span>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
@@ -336,61 +343,3 @@
     <!-- Watch Choice  End-->
     <!--? Shop Method Start-->
 {% endblock %}
-<!-- Search model end -->
-
-<!-- JS here -->
-
-<script src="../static/assets/js/vendor/modernizr-3.5.0.min.js"></script>
-<!-- Jquery, Popper, Bootstrap -->
-<script src="../static/assets/js/vendor/jquery-1.12.4.min.js"></script>
-<script src="../static/assets/js/popper.min.js"></script>
-<script src="../static/assets/js/bootstrap.min.js"></script>
-<!-- Jquery Mobile Menu -->
-<script src="../static/assets/js/jquery.slicknav.min.js"></script>
-
-<!-- Jquery Slick , Owl-Carousel Plugins -->
-<script src="../static/assets/js/owl.carousel.min.js"></script>
-<script src="../static/assets/js/slick.min.js"></script>
-
-<!-- One Page, Animated-HeadLin -->
-<script src="../static/assets/js/wow.min.js"></script>
-<script src="../static/assets/js/animated.headline.js"></script>
-<script src="../static/assets/js/jquery.magnific-popup.js"></script>
-
-<!-- Scrollup, nice-select, sticky -->
-<script src="../static/assets/js/jquery.scrollUp.min.js"></script>
-<script src="../static/assets/js/jquery.nice-select.min.js"></script>
-<script src="../static/assets/js/jquery.sticky.js"></script>
-
-<!-- contact js -->
-<script src="../static/assets/js/contact.js"></script>
-<script src="../static/assets/js/jquery.form.js"></script>
-<script src="../static/assets/js/jquery.validate.min.js"></script>
-<script src="../static/assets/js/mail-script.js"></script>
-<script src="../static/assets/js/jquery.ajaxchimp.min.js"></script>
-
-<!-- Jquery Plugins, main Jquery -->
-<script src="../static/assets/js/plugins.js"></script>
-<script src="../static/assets/js/main.js"></script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'UA-23581568-13');
-</script>
-
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
-        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
-        data-cf-beacon='{"rayId":"9224dab25cc83f7d","version":"2025.1.0","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"cd0b4b3a733644fc843ef0b185f98241","b":1}'
-        crossorigin="anonymous"></script>
-
-<!-- Mirrored from preview.colorlib.com/theme/timezone/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 Mar 2025 12:51:45 GMT -->
-</html>
