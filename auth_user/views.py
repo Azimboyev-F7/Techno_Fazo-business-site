@@ -16,9 +16,9 @@ def login_view(request):
                 login(request, user)  # `user` mavjudligini tekshirib login qilamiz
                 return redirect('main:index')
     context = {
-        'forms': forms
+        'form': forms
     }
-    return render(request, 'auth_user/login.html', context)
+    return render(request, 'auth/login.html', context)
 
 def register_view(request):
     if request.method == 'POST':
