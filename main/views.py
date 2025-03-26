@@ -19,6 +19,7 @@ def industry(request):
     return render(request, 'texno_fazo/industries.html', context)
 
 def product_list(request):
+    
     context = {
 
     }

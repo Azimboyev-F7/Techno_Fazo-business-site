@@ -12,7 +12,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="{% static 'assets/img/logo/logo.png' %}" alt="">
+                    <img src="{% static 'assets/img/logo/logo_techno.png' %}" alt="">
                 </div>
             </div>
         </div>
@@ -181,113 +181,25 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-popular-items mb-50 text-center">
-                        <div class="popular-img">
-                            <img src="{% static 'assets/img/gallery/t2.png' %}" alt="">
-                            <div class="img-cap">
-                                <span>Savatga qo'shish</span>
+                {% for product in products}
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-popular-items mb-50 text-center">
+                            <div class="popular-img">
+                                <img src="{% static 'assets/img/gallery/t2.png' %}" alt="">
+                                <div class="img-cap">
+                                    <span>Savatga qo'shish</span>
+                                </div>
+                                <div class="favorit-items">
+                                    <span class="flaticon-heart"></span>
+                                </div>
                             </div>
-                            <div class="favorit-items">
-                                <span class="flaticon-heart"></span>
+                            <div class="popular-caption">
+                                <h3><a href="product_details.html">{{ product.title }}</a></h3>
+                                <span>{{ product.price }}</span>
                             </div>
-                        </div>
-                        <div class="popular-caption">
-                            <h3><a href="product_details.html">Anntena T2</a></h3>
-                            <span>90.000 sum</span>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-popular-items mb-50 text-center">
-                        <div class="popular-img">
-                            <img src="{% static 'assets/img/gallery/smart-box.jpg' %}" style="height: 390px" alt="">
-                            <div class="img-cap">
-                                <span>Savatga qo'shish</span>
-                            </div>
-                            <div class="favorit-items">
-                                <span class="flaticon-heart"></span>
-                            </div>
-                        </div>
-                        <div class="popular-caption">
-                            <h3><a href="product_details.html">Smart box</a></h3>
-                            <span>200.000 sum</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-popular-items mb-50 text-center">
-                        <div class="popular-img">
-                            {% if product.image %}
-                                <img src="{{ product.image.url }}" style="height: 390px" alt="">
-                            {% else %}
-                                <h1 class="text-danger" >Image not found</h1>
-                            {% endif %}
-                            <div class="img-cap">
-                                <span>Savatga qo'shish</span>
-                            </div>
-                            <div class="favorit-items">
-                                <span class="flaticon-heart"></span>
-                            </div>
-                        </div>
-                        <div class="popular-caption">
-                            <h3><a href="product_details.html">{{ product.title }}</a></h3>
-                            <span>{{ product.price }}</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-popular-items mb-50 text-center">
-                        <div class="popular-img">
-                            <img src="{% static 'assets/img/gallery/artel-remonte.jpg' %}" style="height: 390px" alt="">
-                            <div class="img-cap">
-                                <span>Savatga qo'shish</span>
-                            </div>
-                            <div class="favorit-items">
-                                <span class="flaticon-heart"></span>
-                            </div>
-                        </div>
-                        <div class="popular-caption">
-                            <h3><a href="product_details.html">Artel pult</a></h3>
-                            <span>10.000 sum</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-popular-items mb-50 text-center">
-                        <div class="popular-img">
-                            <img src="{% static 'assets/img/gallery/shark-flashlight.jpg' %}" style="height: 390px"
-                                 alt="">
-                            <div class="img-cap">
-                                <span>Savatga qo'shish</span>
-                            </div>
-                            <div class="favorit-items">
-                                <span class="flaticon-heart"></span>
-                            </div>
-                        </div>
-                        <div class="popular-caption">
-                            <h3><a href="product_details.html">Shark Flashlight</a></h3>
-                            <span>150.000 sum</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-popular-items mb-50 text-center">
-                        <div class="popular-img">
-                            <img src="{% static 'assets/img/gallery/wifi-tenda.jpg' %}" style="height: 390px" alt="">
-                            <div class="img-cap">
-                                <span>Savatga qo'shish</span>
-                            </div>
-                            <div class="favorit-items">
-                                <span class="flaticon-heart"></span>
-                            </div>
-                        </div>
-                        <div class="popular-caption">
-                            <h3><a href="product_details.html">Wifi tenda</a></h3>
-                            <span>250.000 sum</span>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
             <!-- Button -->
             <div class="row justify-content-center">
