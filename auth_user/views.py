@@ -11,9 +11,21 @@ def login_view(request):
         forms = MyAuthenticationForm(request, data=request.POST)
         if forms.is_valid():
             user = forms.get_user() 
-            login(request, user)
-            return redirect('main:index')
+            print(f"Authenticated user: {user}")  # 🔍 Tekshirish uchun qo‘shilgan qator
+            if user is not None:
+                login(request, user)  # `user` mavjudligini tekshirib login qilamiz
+                return redirect('main:index')
     context = {
         'forms': forms
     }
     return render(request, 'auth_user/login.html', context)
+
+def register_view(request):
+    if request.method == 'POST':
+        pass
+
+    ctx = {
+
+    }
+
+    return render(request, 'auth/register.html', ctx)

@@ -217,25 +217,23 @@
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="single-popular-items mb-50 text-center">
-                        {% for product in products %}
-                            <div class="popular-img">
-                                {% if product.image %}
-                                    <img src="{{ product.image.url }}" style="height: 390px" alt="">
-                                {% else %}
-                                    <h1>Image not found</h1>
-                                {% endif %}
-                                <div class="img-cap">
-                                    <span>Savatga qo'shish</span>
-                                </div>
-                                <div class="favorit-items">
-                                    <span class="flaticon-heart"></span>
-                                </div>
+                        <div class="popular-img">
+                            {% if product.image %}
+                                <img src="{{ product.image.url }}" style="height: 390px" alt="">
+                            {% else %}
+                                <h1 class="text-danger" >Image not found</h1>
+                            {% endif %}
+                            <div class="img-cap">
+                                <span>Savatga qo'shish</span>
                             </div>
-                            <div class="popular-caption">
-                                <h3><a href="product_details.html">{{ product.title }}</a></h3>
-                                <span>{{ product.price }}</span>
+                            <div class="favorit-items">
+                                <span class="flaticon-heart"></span>
                             </div>
-                        {% endfor %}
+                        </div>
+                        <div class="popular-caption">
+                            <h3><a href="product_details.html">{{ product.title }}</a></h3>
+                            <span>{{ product.price }}</span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">

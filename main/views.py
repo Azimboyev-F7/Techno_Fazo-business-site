@@ -14,6 +14,7 @@ def index(request):
 
 def industry(request):
     context = {
+        
     }
     return render(request, 'texno_fazo/industries.html', context)
 

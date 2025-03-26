@@ -4,6 +4,13 @@ from .models import Product
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('id', 'title')
+    list_display_links = ('title',)
+    search_fields = ('title',)
+    list_filter = ('title',)
+    list_per_page = 2
+    readonly_fields = ('created_at', 'updated_at')
+    
+
 
 
 admin.site.register(Product, ProductAdmin)
