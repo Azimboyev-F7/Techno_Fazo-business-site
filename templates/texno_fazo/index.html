@@ -181,11 +181,15 @@
                 </div>
             </div>
             <div class="row">
-                {% for product in products}
+                {% for product in products %}
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                         <div class="single-popular-items mb-50 text-center">
                             <div class="popular-img">
-                                <img src="{% static 'assets/img/gallery/t2.png' %}" alt="">
+                                {% if product.image %}
+                                    <img src="{{ product.image.url }}" alt="" style="height: 400px; width: 400px">
+                                {% else %}
+                                    <h1>NO Image</h1>
+                                {% endif %}
                                 <div class="img-cap">
                                     <span>Savatga qo'shish</span>
                                 </div>

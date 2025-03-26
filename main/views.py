@@ -19,15 +19,16 @@ def industry(request):
     return render(request, 'texno_fazo/industries.html', context)
 
 def product_list(request):
-    
+
     context = {
 
     }
     return render(request, 'texno_fazo/product_details.html', context)
 
 def shop(request):
+    products = Product.objects.all()
     context = {
-
+        'products': products
     }
     return render(request, 'texno_fazo/shop.html', context)
 
