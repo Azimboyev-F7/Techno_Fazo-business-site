@@ -3,16 +3,16 @@
 {% load static %}
 
 {% block header %}
-    <h1 class="text-center my-4">Register</h1>
 {% endblock %}
 
 {% block content %}
-    <div class="row">
-        <div class="col-6 offset-3">
-            <div class="card shadow p-4">
+<div class="row m-5">
+    <div class="col-6 offset-3">
+        <div class="card shadow p-4">
+                <h1 class="text-center my-4">Register</h1>
                 <form action="" method="post">
                     {% csrf_token %}
-                    
+                    {{ form.as_p }}
 <!-- {#                    <div class="mb-3">#}
 {#                        <label for="exampleFormControlUsername" class="form-label">Username</label>#}
 {#                        <input type="text" name="username" class="form-control" id="exampleFormControlUsername"#}
@@ -30,7 +30,7 @@
 {#                    </div>#}
 {#                    <div class="mb-3">#}
 {#                        <label for="exampleFormControlConfirmPassword" class="form-label">Confirm Password</label>#}
-{#                        <input type="password" name="confirm_password" class="form-control" id="exampleFormControlConfirmPassword"#}
+{#                        <input type="password" name="password2" class="form-control" id="exampleFormControlConfirmPassword"#}
 {#                               placeholder="Confirm your Password">#}
 {#                    </div>#} -->
                     <div class="d-grid gap-2 col-6 mx-auto my-4">

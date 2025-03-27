@@ -25,8 +25,8 @@
                 <div class="login_part_text text-center">
                     <div class="login_part_text_iner">
                         <h2>Do'konimizda yangimisiz?</h2>
-                        <p>There are advances being made in science and technology
-                            everyday, and a good example of this is the</p>
+                        <p>Siz oldin kirib akkaunt yaratmagan bo'lsangiz
+                            Bu yerdan akkaunt yaratishingiz mumkin</p>
                         <a href="{% url 'auth_user:register' %}" class="btn_3">Yangi akkaunt yaratish</a>
                     </div>
                 </div>
@@ -34,8 +34,8 @@
             <div class="col-lg-6 col-md-6">
                 <div class="login_part_form">
                     <div class="login_part_form_iner">
-                        <h3>Welcome Back ! <br>
-                            Please Sign in now</h3>
+                        <h3>Xush kelibsiz ! <br>
+                            Ro'yxatdan o'ting</h3>
                         <form class="row contact_form" method="post" novalidate="novalidate">
                             {% csrf_token %}
                             <div class="col-md-12 form-group p_star">
@@ -64,5 +64,5 @@
             </div>
         </div>
     </div>
-</section
+</section>
 {% endblock %}
