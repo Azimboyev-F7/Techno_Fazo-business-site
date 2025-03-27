@@ -186,7 +186,11 @@
                         <div class="single-popular-items mb-50 text-center">
                             <div class="popular-img">
                                 {% if product.image %}
-                                    <img src="{{ product.image.url }}" alt="" style="height: 400px; width: 400px">
+                                    {% if product.image %}
+                                        <img src="{{ product.image.url }}" alt="" style="height: 400px; width: 400px">
+                                    {% else %}
+                                        <h1>No Image</h1>
+                                    {% endif %}
                                 {% else %}
                                     <h1>NO Image</h1>
                                 {% endif %}
