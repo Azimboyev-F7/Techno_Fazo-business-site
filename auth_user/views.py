@@ -20,6 +20,17 @@ def login_view(request):
     }
     return render(request, 'auth/login.html', context)
 
+
+def logout_view(request):
+    if request.method == 'POST':
+        logout(request)
+        return redirect('main:index')
+    
+    ctx = {
+        
+    }
+    return render(request, 'auth/logout.html', ctx)
+
 def register_view(request):
     if request.method == 'POST':
         pass
