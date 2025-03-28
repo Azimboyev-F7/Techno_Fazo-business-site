@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Product
+from .models import Product, Kop_sotilgan_tovar
 
 
 # Create your views here.
@@ -27,8 +27,12 @@ def product_list(request):
 
 def shop(request):
     products = Product.objects.all()
+    cheap_products = Product.objects.all().order_by('price')
+    popular_products = Kop_sotilgan_tovar.objects.all()
     context = {
-        'products': products
+        'products': products,
+        'cheap_products': cheap_products,
+        'popular_products': popular_products
     }
     return render(request, 'texno_fazo/shop.html', context)
 
