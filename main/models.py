@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.text import slugify
+from django.db.models.signals import pre_save, post_save
 
 # Create your models here.
 
@@ -15,8 +16,18 @@ class Product(models.Model):
         return self.title
 
 
-    def save(self, insert=False, force_insert=False, force_update=False, using=None, update_fields=None):
-        if self.slug is None:
-            self.slug = slugify(self.title)
+    # def save(self, insert=False, force_insert=False, force_update=False, using=None, update_fields=None):
+    #     if self.slug is None:
+    #         self.slug = slugify(self.title)
             
-        return super().save(force_insert=False, force_update=False, using=None, update_fields=None)
+    #     return super().save(force_insert=False, force_update=False, using=None, update_fields=None)
+    
+
+def product_pre_save(sender, instance,  *args, **kwargs):
+    instance.slug = slugify(instance.title)
+    if Product.objects.filter(slug=instance.slug).exclude(id=instance.id).exists():
+        import uuid
+        instance.slug += f"-{str(uuid.uuid4()).split('-')[0]}"
+    
+
+pre_save.connect(product_pre_save, sender=Product)
