@@ -14,6 +14,17 @@ class Product(models.Model):
     
     def __str__(self):
         return self.title
+
+class Kirishdagi_tovar(models.Model):
+    title = models.CharField(max_length=255)
+    slug = models.SlugField(null=True, blank=True)
+    price = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='product/')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    
+    def __str__(self):
+        return self.title
     
 class Kop_sotilgan_tovar(models.Model):
     title = models.CharField(max_length=255)
@@ -41,3 +52,13 @@ def product_pre_save(sender, instance,  *args, **kwargs):
     
 
 pre_save.connect(product_pre_save, sender=Product)
+
+
+def kop_sotilgan_tovar_pre_save(sender, instance,  *args, **kwargs):
+    instance.slug = slugify(instance.title)
+    if Kop_sotilgan_tovar.objects.filter(slug=instance.slug).exclude(id=instance.id).exists():
+        import uuid
+        instance.slug += f"-{str(uuid.uuid4()).split('-')[0]}"
+    
+
+pre_save.connect(kop_sotilgan_tovar_pre_save, sender=Kop_sotilgan_tovar)

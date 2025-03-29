@@ -90,42 +90,24 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-new-pro mb-30 text-center">
-                        <div class="product-img">
-                            <img src="{% static 'assets/img/gallery/camera-high.webp' %}"
-                                 style="height: 490px; width: 450px" alt="">
-                        </div>
-                        <div class="product-caption">
-                            <h3><a href="product_details.html">Wifi Camera 4K</a></h3>
-                            <span>$ 15.79</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-new-pro mb-30 text-center">
-                        <div class="product-img">
-                            <img src="{% static 'assets/img/gallery/hadn-fand.jpg' %}"
-                                 style="height: 490px; width: 400px" alt="">
-                        </div>
-                        <div class="product-caption">
-                            <h3><a href="product_details.html">Qo'l Ventilyatori</a></h3>
-                            <span>$ 3.78</span>
+                {% for product in kirishdagi %}
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-new-pro mb-30 text-center">
+                            <div class="product-img">
+                                {% if product.image %}
+                                    <img src="{{ product.image.url }}"
+                                        style="height: 490px; width: 450px" alt="">
+                                {% else %}
+                                    <h1>No Image</h1>
+                                {% endif %}
+                            </div>
+                            <div class="product-caption">
+                                <h3><a href="product_details.html">{{ product.title }}</a></h3>
+                                <span>{{ product.price }}</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-new-pro mb-30 text-center">
-                        <div class="product-img">
-                            <img src="{% static 'assets/img/gallery/wifi-camera.avif' %}"
-                                 style="height: 490px; width: 420px" alt="">
-                        </div>
-                        <div class="product-caption">
-                            <h3><a href="product_details.html">Shark Camera</a></h3>
-                            <span>$ 20,45</span>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>

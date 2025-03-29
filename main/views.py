@@ -1,13 +1,15 @@
 from django.shortcuts import render
-from .models import Product, Kop_sotilgan_tovar
+from .models import Product, Kop_sotilgan_tovar, Kirishdagi_tovar
 
 
 # Create your views here.
 
 def index(request):
     products = Product.objects.all()
+    kirishdagi = Kirishdagi_tovar.objects.all()
     context = {
-        'products': products
+        'products': products,
+        'kirishdagi': kirishdagi
     }
     return render(request, 'texno_fazo/index.html', context)
 
@@ -54,4 +56,5 @@ def contact(request):
 
     }
     return render(request, 'texno_fazo/contact.html', context)
+
 
