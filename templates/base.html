@@ -188,10 +188,10 @@
                     <div class="footer-tittle">
                         <h4>Linklar</h4>
                         <ul>
-                            <li><a href="#">Biz haqimizda</a></li>
-                            <li><a href="#"> Kafolat va qaytarish siyosati</a></li>
-                            <li><a href="#"> Eng yangi mahsulotlar</a></li>
-                            <li><a href="#"> Biz bilan bog‘lanish</a></li>
+                            <li><a href="{% url 'main:about' %}">Biz haqimizda</a></li>
+                            <li><a href="/"> Kafolat va qaytarish siyosati</a></li>
+                            <li><a href="{% url 'main:shop' %}"> Eng yangi mahsulotlar</a></li>
+                            <li><a href="{% url 'main:contact' %}"> Biz bilan bog‘lanish</a></li>
                         </ul>
                     </div>
                 </div>
@@ -201,10 +201,10 @@
                     <div class="footer-tittle">
                         <h4>Top mahsulotlar</h4>
                         <ul>
-                            <li><a href="#">Anntena</a></li>
-                            <li><a href="#">Fonar</a></li>
-                            <li><a href="#"> Wifi camera</a></li>
-                            <li><a href="#"> TV</a></li>
+                            <li><a href="{% url 'main:shop' %}">Anntena</a></li>
+                            <li><a href="{% url 'main:shop' %}">Fonar</a></li>
+                            <li><a href="{% url 'main:shop' %}"> Wifi camera</a></li>
+                            <li><a href="{% url 'main:shop' %}"> TV</a></li>
                         </ul>
                     </div>
                 </div>
